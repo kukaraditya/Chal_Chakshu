@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.dekhok.railway">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="false"
+        android:fullBackupOnly="false">
+        <activity android:name=".PendingData"></activity>
+        <activity android:name=".Video" />
+        <activity android:name=".OtherFootplate" />
+        <activity
+            android:name=".FirstActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".Testing_Two" />
+        <activity android:name=".LiReport" />
+        <activity
+            android:name=".Main3Activity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Form"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Question"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name=".Main2Activity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/title_activity_main2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RadioButtonn"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name=".RadioButtonnAlp"
+            android:alwaysRetainTaskState="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity android:name=".Locatin_Get" />
+        <activity android:name=".Question_Quiz" />
+        <activity
+            android:name=".Question_ALP"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name=".AlpForm"
+            android:launchMode="singleTop" />
+        <activity android:name=".About" />
+        <activity android:name=".FinalSubmit" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".Splash" />
+        <activity
+            android:name=".ArrivalDetails"
+            android:launchMode="singleTop" />
+
+    </application>
+
+</manifest>

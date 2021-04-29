@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VoucherCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose one of these"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tvque" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/answersgrp"
+            android:layout_below="@id/tvque"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true">
+
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Training" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave"
+                android:id="@+id/radioButton2"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sick"
+                android:id="@+id/radioButton3"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Office duty"
+                android:id="@+id/radioButton4"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rest"
+                android:layout_marginTop="10dp"
+                android:id="@+id/radioButton5"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAP (Travel As Passenger)"
+                android:id="@+id/radioButton6"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambush Check"
+                android:id="@+id/radioButton7"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answersgrp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginEnd="50dp"
+                android:background="@android:color/holo_red_light"
+                android:text="submit"
+                android:textColor="#fff" />
+
+        </RadioGroup>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

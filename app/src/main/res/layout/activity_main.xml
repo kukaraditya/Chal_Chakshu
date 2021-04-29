@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.dekhok.railway.MainActivity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VoucherCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Indian Railway"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/north_railway" />
+
+            <TableRow
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/imageView3"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_rounded_btn"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:hint="Enter User Name"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#696363" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tab1"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_rounded_btn"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/password"
+                    android:hint="Enter Password"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#696363" />
+            </TableRow>
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tab2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkBox"
+                android:layout_alignBottom="@+id/checkBox"
+                android:layout_toEndOf="@+id/checkBox"
+                android:layout_toRightOf="@+id/checkBox"
+                android:text="keep me logged in"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/checkBox"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:background="#f0640c"
+                android:text="Login"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Forgot User Name"
+                android:textColor="@android:color/holo_blue_dark" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

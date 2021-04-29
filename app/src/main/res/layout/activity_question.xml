@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TableRow
+                android:id="@+id/tble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="LP Footplate"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="version"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/reset"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+
+            </TableRow>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tab1"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#2d2a2a"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_rounded_btn">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Continuity Test"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+
+            </TableRow>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab1"
+                android:onClick="selected"
+                android:checkedButton="@id/radio_group"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/radio_group"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:id="@+id/editText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto"
+                    android:text="Last Given number : "
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/given_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/prev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tab1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/tab1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round"
+                    android:text="Previous"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/next"
+                    android:layout_alignBottom="@+id/next"
+                    android:layout_alignEnd="@+id/tab1"
+                    android:layout_alignRight="@+id/tab1"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round"
+                    android:text="Next"
+                    android:textColor="#fff" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tab2"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="0 --> Poor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="1 --> Average"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tab3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="2 --> Good"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="3 --> Very Good"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tab4"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="NA --> skip the question in case it can not be possible to test at that time by simply press next button"
+                    android:textSize="18sp" />
+
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chal Chakshu</string>
+    <string name="title_activity_main2">Railway</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_title">Type of Wagon</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about">CHAL-CHAKSHU चल चक्षु App is online crew monitoring tool developed by Jaipur division .This will eliminate existing manual paper based footplate recording and reporting mechanism.It is digital tool for loco inspectors who can review their crew while footplating and grade their performance.It is GPS enabled application which log Loco inspectors movement while footplating.Unique user Id is given to each inspector and they grade crew on 22 parameters with total grade score 100.Along with this he can register various abnormalities notices during footplate in specific tab-signal abnormalities,Engg.abnormality , Trd abnormality &amp;operating  abnormality.
+All submitted data is saved in cloud server and attribute based reports can be retrieved for data analysis.These reports provide a effective way of monitoring and data based evaluation of crew performance.</string>
+</resources>

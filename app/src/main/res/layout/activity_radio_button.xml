@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ret"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e4e4e4"
+    tools:context="co.dekhok.railway.Question">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TableRow
+                android:id="@+id/tble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:text="Abnormalities"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="version"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/reset"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+
+            </TableRow>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TableRow
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Signal Abnormally"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/spinnerMulti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="24dp"
+                android:hint="Remark"
+                android:background="@drawable/white_rounded_btn"/>
+
+
+            <TableRow
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerMulti">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Engineering Abnormally"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/spinnerMulti2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:hint="Remark"
+                android:inputType="textMultiLine"
+                android:background="@drawable/white_rounded_btn"/>
+
+            <TableRow
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerMulti2">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Traffic Abnormally"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/spinnerMulti3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab3"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:hint="Remark"
+                android:inputType="textMultiLine"
+                android:background="@drawable/white_rounded_btn"/>
+
+            <TableRow
+                android:id="@+id/tab4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerMulti3">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="TRD Abnormally"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/spinnerMulti4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab4"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:inputType="textMultiLine"
+                android:hint="Remark"
+                android:background="@drawable/white_rounded_btn"/>
+
+            <TableRow
+                android:id="@+id/tab5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerMulti4"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Others"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/spinnerMulti5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab5"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:inputType="textMultiLine"
+                android:hint="Remark"
+                android:background="@drawable/white_rounded_btn"/>
+
+            <TableRow
+                android:id="@+id/tab6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerMulti5"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="@font/roboto"
+                    android:text="Matter of Counselling"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/matter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab5"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/white_rounded_btn"
+                android:hint="Remark" />
+
+            <TableRow
+                android:id="@+id/tab7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                android:layout_below="@+id/spinnerMulti5"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/question"
+                    android:layout_alignBottom="@+id/question"
+                    android:layout_alignLeft="@+id/spinnerMulti"
+                    android:layout_alignStart="@+id/spinnerMulti"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="(Q)"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Arrival Station"
+                    android:textColor="#2d2a2a"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <EditText
+                android:id="@+id/arstu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab5"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:hint="Arrival Station"
+                android:background="@drawable/white_rounded_btn"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/matter"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

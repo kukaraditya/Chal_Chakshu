@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tab1" />
+
+    <TableRow
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/white_rounded_btn">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/question"
+            android:layout_alignBottom="@+id/question"
+            android:layout_alignLeft="@+id/spinnerMulti"
+            android:layout_alignStart="@+id/spinnerMulti"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="(Q)"
+            android:textColor="#2d2a2a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:text="Continuity Test"
+            android:textColor="#2d2a2a"
+            android:textSize="18sp" />
+
+
+
+    </TableRow>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab1" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/radio_group">
+
+                <TextView
+                    android:id="@+id/editText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Last Given number : "
+                    android:inputType="numberPassword" />
+
+                <TextView
+                    android:id="@+id/given_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tab1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/tab1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round"
+                    android:text="next"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/next1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/next"
+                    android:layout_alignBottom="@+id/next"
+                    android:layout_alignEnd="@+id/tab1"
+                    android:layout_alignRight="@+id/tab1"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round"
+                    android:text="previous"
+                    android:textColor="#fff" />
+
+
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
